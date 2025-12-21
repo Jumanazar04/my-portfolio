@@ -21,12 +21,9 @@ export default function Navbar() {
   return (
     <AppBar position="sticky">
       <Toolbar sx={{ justifyContent: "space-between" }}>
-        <Typography variant="h6">Jumanazar.dev</Typography>
+        <Button variant="h6" component={Link} href="/">J.dev</Button>
 
         <div>
-          <Button color="inherit" component={Link} href="/">
-            Home
-          </Button>
           <Button color="inherit" component={Link} href="/projects">
             Projects
           </Button>
