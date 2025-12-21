@@ -8,6 +8,8 @@ import {
   Avatar,
 } from "@mui/material";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
   return (
@@ -25,6 +27,10 @@ export default function Hero() {
       }}
     >
       <Box
+        component={motion.div}
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
         sx={{
           maxWidth: 1200,
           width: "100%",
@@ -36,39 +42,31 @@ export default function Hero() {
         }}
       >
         {/* TEXT CONTENT */}
-        <Stack spacing={3} sx={{ maxWidth: 600 }}>
-          <Typography
-            variant="h2"
-            sx={{
-              fontWeight: 800,
-              lineHeight: 1.1,
-            }}
-          >
-            Hi, I’m{" "}
+        <Stack spacing={3} maxWidth={600}>
+          <Typography variant="h2" fontWeight={800}>
+            Hi All, I’m{" "}
             <Box component="span" sx={{ color: "primary.main" }}>
               Jumanazar
             </Box>
           </Typography>
 
-          <Typography
-            variant="h6"
-            color="text.secondary"
-            sx={{ maxWidth: 520 }}
-          >
-            Frontend Developer specializing in{" "}
-            <Box component="span" sx={{ color: "primary.main" }}>
-              React
-            </Box>
-            ,{" "}
-            <Box component="span" sx={{ color: "primary.main" }}>
-              Next.js
-            </Box>{" "}
-            and modern UI development with{" "}
-            <Box component="span" sx={{ color: "primary.main" }}>
-              MUI
-            </Box>
-            .
-          </Typography>
+          <TypeAnimation
+          
+            sequence={[
+              "Frontend Developer",
+              1500,
+              "React Developer",
+              1500,
+              "Next.js Developer",
+              1500,
+            ]}
+            speed={50}
+            repeat={Infinity}
+            style={{
+              fontSize: "1.4rem",
+              color: "#94a3b8",
+            }}
+          />
 
           <Stack direction="row" spacing={2}>
             <Button
@@ -89,11 +87,12 @@ export default function Hero() {
               variant="outlined"
               size="large"
               component={Link}
-              href="tel:+998995183709"
+              href="/contact"
               sx={{ px: 4, py: 1.5 }}
             >
               Contact Me
             </Button>
+            
           </Stack>
         </Stack>
 

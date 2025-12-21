@@ -13,6 +13,7 @@ import { motion } from "framer-motion";
 export default function Contact() {
   const [form, setForm] = useState({
     name: "",
+    phoneNumber: "",
     email: "",
     message: "",
   });
@@ -28,7 +29,7 @@ export default function Contact() {
       body: JSON.stringify(form),
     });
 
-    setForm({ name: "", email: "", message: "" });
+    setForm({ name: "", phoneNumber: "", email: "", message: "" });
     setLoading(false);
     alert("Message sent!");
   };
@@ -54,6 +55,14 @@ export default function Contact() {
             value={form.name}
             onChange={(e) =>
               setForm({ ...form, name: e.target.value })
+            }
+          />
+          <TextField
+            label="Phone Number"
+            required
+            value={form.phoneNumber}
+            onChange={(e) =>
+              setForm({ ...form, phoneNumber: e.target.value })
             }
           />
           <TextField

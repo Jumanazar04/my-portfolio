@@ -57,6 +57,14 @@ export default function Navbar() {
           <Button component={Link} href="/about">
             About
           </Button>
+          <Button
+            variant="outlined"
+            href="/cv.pdf"
+            target="_blank"
+          >
+            Download CV
+          </Button>
+
 
           <IconButton  onClick={toggleColorMode}>
             {theme.palette.mode === "dark" ? (

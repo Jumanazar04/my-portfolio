@@ -1,11 +1,12 @@
 export async function POST(req) {
   const body = await req.json();
-  const { name, email, message } = body;
+  const { name, email, message, phoneNumber } = body;
 
   const text = `
 📩 New Portfolio Message
 
 👤 Name: ${name}
+📞 Phone Number: ${phoneNumber}
 📧 Email: ${email}
 💬 Message:
 ${message}

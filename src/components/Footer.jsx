@@ -10,6 +10,7 @@ export default function Footer() {
       sx={{
         py: 4,
         textAlign: "center",
+        width: '100%',
         background:
           theme.palette.mode === "dark"
             ? "rgba(2,6,23,0.7)"
