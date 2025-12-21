@@ -31,7 +31,7 @@ export default function Hero() {
           <Button variant="contained" component={Link} href="/projects">
             View Projects
           </Button>
-          <Button variant="outlined" component={Link} href="+mailto:+998995183709">
+          <Button variant="outlined" component={Link} href="tel:+998995183709">
             Contact
           </Button>
         </Stack>
