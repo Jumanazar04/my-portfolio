@@ -4,8 +4,8 @@ import ProjectCard from "@/components/ProjectCard";
 
 export default function ProjectsPage() {
   return (
-    <Container sx={{ py: 5 }}>
-      <Typography variant="h4" mb={3}>
+    <Container sx={{ px: { xs: 2, md: 6 }, py: 4}}>
+      <Typography variant="h3" fontWeight={'700'} mb={3}>
         Projects
       </Typography>
 

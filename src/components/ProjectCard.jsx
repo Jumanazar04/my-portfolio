@@ -19,6 +19,7 @@ export default function ProjectCard({ project }) {
         <Stack direction="row" spacing={1} mt={2} flexWrap="wrap">
           {project.stack.map((tech) => (
             <Chip key={tech} label={tech} size="small" />
+            
           ))}
         </Stack>
 
