@@ -14,7 +14,7 @@ export default function Hero() {
         justifyContent: "space-evenly",
         px: 3,
         gap: 4,
-        flexDirection: { xs: "column", md: "row" },
+        flexDirection: { xs: "column-reverse", md: "row" },
       }}
     >
       {/* TEXT */}
