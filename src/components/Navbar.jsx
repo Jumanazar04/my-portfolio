@@ -54,9 +54,6 @@ export default function Navbar() {
           <Button component={Link} href="/projects">
             Projects
           </Button>
-          <Button component={Link} href="/about">
-            About
-          </Button>
           <Button
             variant="outlined"
             href="/cv.pdf"

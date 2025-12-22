@@ -1,12 +1,16 @@
-import { Box, Typography, Container } from "@mui/material";
+import { Box, Typography, Container, Link } from "@mui/material";
+
 
 export default function About() {
   return (
-    <Box sx={{ py: 10 }}>
+    <Box sx={{ py: 8, borderBottom: '1px solid rgba(148,163,184,0.15)' }}>
       <Container maxWidth="md">
         <Typography
-          variant="h3"
+          component={Link}
+          href="/about"
+          sx={{textDecoration: 'none', fontSize: 42, mx: 'auto'}}
           textAlign="center"
+          color="inherit"
           fontWeight={700}
           mb={4}
         >
@@ -17,7 +21,7 @@ export default function About() {
           color="text.secondary"
           fontSize="1.1rem"
           lineHeight={1.8}
-          textAlign="center"
+          textAlign="left"
         >
           I am a frontend developer focused on building modern,
           responsive, and user-friendly web applications.

@@ -9,7 +9,7 @@ import {
 
 export default function ProjectCard({ project }) {
   return (
-    <Card>
+    <Card  sx={{py: 8, borderBottom: '1px solid rgba(148,163,184,0.15)' }}>
       <CardContent>
         <Typography variant="h6">{project.title}</Typography>
         <Typography color="text.secondary">
@@ -30,6 +30,14 @@ export default function ProjectCard({ project }) {
           target="_blank"
         >
           GitHub
+        </Button>
+        <Button
+          sx={{ mt: 2 , ml: 1 }}
+          variant="outlined"
+          href={project.demo}
+          target="_blank"
+        >
+          Demo
         </Button>
       </CardContent>
     </Card>

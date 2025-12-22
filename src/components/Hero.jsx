@@ -55,9 +55,11 @@ export default function Hero() {
             sequence={[
               "Frontend Developer",
               1500,
-              "React Developer",
+              "React.js Developer",
               1500,
               "Next.js Developer",
+              1500,
+              "Vue.js Developer",
               1500,
             ]}
             speed={50}
@@ -92,7 +94,7 @@ export default function Hero() {
             >
               Contact Me
             </Button>
-            
+
           </Stack>
         </Stack>
 
@@ -119,8 +121,8 @@ export default function Hero() {
             src="/images/me.jpg"
             alt="Jumanazar"
             sx={{
-              width: { xs: 220, md: 380 },
-              height: { xs: 220, md: 380 },
+              width: { xs: 250, md: 380 },
+              height: { xs: 250, md: 380 },
               border: "4px solid",
               borderColor: "primary.main",
               position: "relative",
