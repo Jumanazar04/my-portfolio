@@ -17,6 +17,7 @@ export const skills = [
       { name: "React", level: 80, icon: <Code /> },
       { name: "Next.js", level: 75, icon: <Build /> },
       { name: "MUI", level: 75, icon: <Build /> },
+      { name: "Vue", level: 70, icon: <Code /> },
     ],
   },
   {

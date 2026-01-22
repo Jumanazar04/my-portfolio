@@ -9,7 +9,7 @@ import {
 
 export default function ProjectCard({ project }) {
   return (
-    <Card  sx={{py: 8, borderBottom: '1px solid rgba(148,163,184,0.15)' }}>
+    <Card  sx={{py: 2, borderBottom: '1px solid rgba(148,163,184,0.15)' }}>
       <CardContent>
         <Typography variant="h6">{project.title}</Typography>
         <Typography color="text.secondary">
