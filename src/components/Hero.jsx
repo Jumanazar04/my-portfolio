@@ -10,6 +10,7 @@ import {
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
+import { ContactEmergency, GitHub, Phone, Telegram } from "@mui/icons-material";
 
 export default function Hero() {
   return (
@@ -94,6 +95,33 @@ export default function Hero() {
             >
               Contact Me
             </Button>
+
+          </Stack>
+          <Stack  direction="row" spacing={1}>
+            <Button
+              variant="text"
+              size="large"
+              component={Link}
+              href="https://github.com/jumanazar04" target="_blank"
+            >
+              <GitHub />
+            </Button>
+            <Button
+              variant="text"
+              size="large"
+              component={Link}
+              href="https://t.me/Yusupov_Jumanazar" target="_blank"
+            >
+              <Telegram />
+            </Button>
+            <Button
+              variant="text"
+              size="large"            
+              component={Link}
+              href="tel:+998995183709"  
+            >
+              <Phone />
+            </Button> 
 
           </Stack>
         </Stack>

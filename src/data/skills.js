@@ -14,10 +14,14 @@ export const skills = [
       { name: "HTML", level: 90, icon: <Html /> },
       { name: "CSS", level: 85, icon: <Css /> },
       { name: "JavaScript", level: 80, icon: <Javascript /> },
-      { name: "React", level: 80, icon: <Code /> },
-      { name: "Next.js", level: 75, icon: <Build /> },
+      { name: "TypeScript", level: 80, icon: <Code /> },
+      { name: "React.js", level: 80, icon: <Code /> },
+      { name: "Vue.js", level: 70, icon: <Code /> },
+      { name: "Next.js", level: 75, icon: <Code /> },
       { name: "MUI", level: 75, icon: <Build /> },
-      { name: "Vue", level: 70, icon: <Code /> },
+      { name: "ANTD", level: 75, icon: <Build /> },
+      { name: "Bootstrap", level: 75, icon: <Build /> },
+
     ],
   },
   {
