@@ -96,6 +96,8 @@ export default function Navbar() {
                 fontWeight: 800,
                 ...(isActive(item.href) && {
                   color: "primary.main",
+                  textDecoration: "underline",
+                  textUnderlineOffset: 6,
                 }),
               }}
             >
