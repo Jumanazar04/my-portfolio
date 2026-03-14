@@ -108,7 +108,7 @@ export default function Navbar() {
           <Button
             variant="outlined"
             component="a"
-            href="/cv.pdf"
+            href="https://docs.google.com/document/d/1VKw2fKVwOXJZIUaoblfxnM_t8ZeDmAp-E-cK2iQQhwU/edit?tab=t.0#heading=h.1fob9te"
             target="_blank"
             rel="noopener noreferrer"
             sx={{ fontWeight: 800 }}

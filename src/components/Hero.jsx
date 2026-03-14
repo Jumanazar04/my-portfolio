@@ -23,6 +23,7 @@ import {
   Telegram,
   KeyboardArrowDown,
   Download,
+  DocumentScanner,
 } from "@mui/icons-material";
 
 export default function Hero() {
@@ -168,9 +169,9 @@ export default function Hero() {
               variant="text"
               size="large"
               component="a"
-              href="/cv.pdf"
+              href="https://docs.google.com/document/d/1VKw2fKVwOXJZIUaoblfxnM_t8ZeDmAp-E-cK2iQQhwU/edit?tab=t.0#heading=h.1fob9te"
               download
-              startIcon={<Download />}
+              startIcon={<DocumentScanner />}
               sx={{ px: 2, py: 1.25, fontSize: "1rem", fontWeight: 800 }}
             >
               Download CV
@@ -210,6 +211,28 @@ export default function Hero() {
                 aria-label="Phone"
               >
                 <Phone />
+              </IconButton>
+            </Tooltip>
+
+            <Tooltip title="Email" arrow>
+              <IconButton
+                component="a"
+                href="mailto:yusupovjumanazar004@gmail.com"
+                aria-label="Email"
+              >
+                <Email />
+              </IconButton>
+            </Tooltip>
+
+            <Tooltip title="Instagram" arrow>
+              <IconButton
+                component="a"
+                href="https://www.instagram.com/j.02_d"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <Instagram />
               </IconButton>
             </Tooltip>
           </Stack>
