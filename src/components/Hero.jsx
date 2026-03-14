@@ -22,8 +22,8 @@ import {
   Phone,
   Telegram,
   KeyboardArrowDown,
-  Download,
-  DocumentScanner,
+  Email,
+  Instagram,
 } from "@mui/icons-material";
 
 export default function Hero() {
@@ -170,8 +170,6 @@ export default function Hero() {
               size="large"
               component="a"
               href="https://docs.google.com/document/d/1VKw2fKVwOXJZIUaoblfxnM_t8ZeDmAp-E-cK2iQQhwU/edit?tab=t.0#heading=h.1fob9te"
-              download
-              startIcon={<DocumentScanner />}
               sx={{ px: 2, py: 1.25, fontSize: "1rem", fontWeight: 800 }}
             >
               CV
