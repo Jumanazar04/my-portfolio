@@ -174,7 +174,7 @@ export default function Hero() {
               startIcon={<DocumentScanner />}
               sx={{ px: 2, py: 1.25, fontSize: "1rem", fontWeight: 800 }}
             >
-              Download CV
+              CV
             </Button>
           </Stack>
 

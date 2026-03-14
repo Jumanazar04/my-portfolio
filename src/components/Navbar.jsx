@@ -113,7 +113,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             sx={{ fontWeight: 800 }}
           >
-            Download CV
+            CV
           </Button>
 
           {/* Social icons (minimal) */}
